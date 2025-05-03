@@ -1,0 +1,26 @@
+version: "3"
+services:
+  backend:
+  build: ./backend
+  ports:
+    - "5000:5000"
+  environment:
+    - PORT=5000
+  env_file:
+    - ./backend/.env
+  volumes:
+    - ./backend:/app
+  depends_on:
+    - frontend
+
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+# MongoDB is used from Atlas, so no local MongoDB service needed

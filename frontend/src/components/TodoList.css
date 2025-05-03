@@ -1,0 +1,204 @@
+/* TodoList.css */
+
+.todo-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+  
+  .todo-container h1 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .new-todo {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .new-todo input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .new-todo input:focus {
+    border-color: #aaa;
+  }
+  
+  .new-todo button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .new-todo button:hover {
+    background: #218838;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .todo-item:last-child {
+    border-bottom: none;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .todo-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .todo-text.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-actions button {
+    background: none;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .todo-actions .edit-btn {
+    color: #007bff;
+  }
+  
+  .todo-actions .edit-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .todo-actions .delete-btn {
+    color: #dc3545;
+  }
+  
+  .todo-actions .delete-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .editing-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .editing-controls input {
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .editing-controls button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .editing-controls .save-btn {
+    background: #17a2b8;
+    color: #fff;
+    margin-right: 4px;
+  }
+  
+  .editing-controls .save-btn:hover {
+    background: #138496;
+  }
+  
+  .editing-controls .cancel-btn {
+    background: #6c757d;
+    color: #fff;
+  }
+  
+  .editing-controls .cancel-btn:hover {
+    background: #5a6268;
+  }
+  /* Base button style */
+  button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  /* Save */
+  .save-btn {
+    background-color: #17a2b8;
+    color: white;
+  }
+  .save-btn:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+  }
+  
+  /* Cancel */
+  .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+  }
+  .cancel-btn:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+  }
+  
+  /* Edit */
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  .edit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Delete */
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  .delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  

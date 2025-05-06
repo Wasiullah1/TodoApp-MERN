@@ -45,7 +45,6 @@ mongoose.connect(process.env.MONGO_URI)
 //   }
 // });
 // Use the todoRoutes for the /api/todos endpoint
-
 app.use('/api/todos', todoRoutes);
 
 // Start the server

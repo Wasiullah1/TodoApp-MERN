@@ -11,8 +11,6 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-// MongoDB Atlas Connection String
-const mongoURI = 'mongodb+srv://wasiullah14:123456wasi@todo.5weelzb.mongodb.net/?retryWrites=true&w=majority&appName=todo';
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Connected to MongoDB Atlas'))
@@ -47,7 +45,7 @@ mongoose.connect(process.env.MONGO_URI)
 //   }
 // });
 // Use the todoRoutes for the /api/todos endpoint
-const todoRoutes = require('./routes/todoRoutes');
+
 app.use('/api/todos', todoRoutes);
 
 // Start the server
